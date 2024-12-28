@@ -1,6 +1,3 @@
-Voici la version révisée en français de votre projet "Système d'Automatisation de Tests Logiciels" :
-
----
 
 # Système d'Automatisation de Tests Logiciels
 
