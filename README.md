@@ -96,6 +96,3 @@ Cliquez sur le lien ci-dessous pour regarder une vidéo de démonstration :
 [click ici :](https://drive.google.com/file/d/1wK-G16si_1OjPYiB6nUjni810F4J0DZb/view)
 
 
-
-
-J'espère que cette version vous convient !
