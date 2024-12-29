@@ -1,7 +1,7 @@
 
 # Système d'Automatisation de Tests Logiciels
 
-Ce projet propose un logiciel basé sur l'IA capable de générer automatiquement des scénarios de tests unitaires et fonctionnels. Il utilise des algorithmes d'apprentissage automatique pour analyser le code source, optimiser la couverture des tests et identifier les cas d'erreurs potentiels. En cas de test échoué, le logiciel peut également suggérer des correctifs ou ajustements.
+Ce projet propose un logiciel basé sur l'IA capable de générer automatiquement des scénarios de tests unitaires et fonctionnels. 
 
 ## Fonctionnalités
 
