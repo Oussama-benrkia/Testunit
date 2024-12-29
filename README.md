@@ -15,6 +15,7 @@ Ce projet propose un logiciel basé sur l'IA capable de générer automatiquemen
 - **Frontend** : Développé avec Angular pour gérer les projets et afficher les résultats des tests.
 - **Backend** : Implémenté avec Spring Boot pour la logique métier et la génération des tests.
 - **Base de données** : MySQL pour le stockage structuré des données.
+![image](https://github.com/user-attachments/assets/c6e1d305-91d7-4758-a421-1152fc709d46)
 
 
 
@@ -89,7 +90,7 @@ Votre projet full-stack devrait maintenant être opérationnel en local. Si vous
 ## Vidéo de Démonstration
 
 Cliquez sur le lien ci-dessous pour regarder une vidéo de démonstration :
-[http://localhost:4200](https://drive.google.com/file/d/1wK-G16si_1OjPYiB6nUjni810F4J0DZb/view)
+[click ici :](https://drive.google.com/file/d/1wK-G16si_1OjPYiB6nUjni810F4J0DZb/view)
 
 
 ## Contribution
