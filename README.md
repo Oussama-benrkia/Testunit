@@ -93,10 +93,6 @@ Cliquez sur le lien ci-dessous pour regarder une vidéo de démonstration :
 [click ici :](https://drive.google.com/file/d/1wK-G16si_1OjPYiB6nUjni810F4J0DZb/view)
 
 
-## Contribution
 
-Nous accueillons les contributions de tous et nous apprécions votre aide pour améliorer ce projet ! Si vous souhaitez contribuer, veuillez suivre ces lignes directrices :
-
----
 
 J'espère que cette version vous convient !
