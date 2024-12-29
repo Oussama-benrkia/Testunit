@@ -12,9 +12,13 @@ Ce projet propose un logiciel basé sur l'IA capable de générer automatiquemen
 
 ## Architecture du Système
 
-- **Frontend** : Développé avec Angular pour gérer les projets et afficher les résultats des tests.
-- **Backend** : Implémenté avec Spring Boot pour la logique métier et la génération des tests.
-- **Base de données** : MySQL pour le stockage structuré des données.
+- **Eureka Server** : Eureka est utilisé pour la découverte de services. Tous les services, y compris le Gateway, le Service Projet et le Service Gemini, s'enregistrent auprès du serveur Eureka. Cela permet aux services de se découvrir dynamiquement, garantissant ainsi une communication fluide et une évolutivité.
+- **Service Projet** : Ce service gère les processus liés aux projets, tels que la gestion des données de projet et l'interaction avec sa base de données dédiée. Lorsque la génération de tests est requise, il communique avec le service Gemini via un point de terminaison.
+- **Base de données** : La base de données stocke les données persistantes gérées par le Service Projet. Cela inclut les informations sur les projets, les configurations et d'autres enregistrements associés.
+- **Service Gemini** : Le service Gemini agit comme un module centralisé pour la génération de tests. Il reçoit des requêtes provenant de divers services métiers (comme le Service Projet) et traite les données nécessaires à la génération des tests. Les résultats sont ensuite renvoyés aux services demandeurs.
+- **Gateway** : Le Gateway est le point d'entrée central pour toutes les requêtes provenant du frontend. Il achemine ces requêtes vers les services backend appropriés, tels que le Service Projet ou le Service Gemini. De plus, le Gateway assure que les requêtes sont authentifiées et équilibrées pour garantir une évolutivité et des performances élevées.
+- **Frontend (Angular)** : L'interface utilisateur est développée avec Angular. Cette application frontend envoie des requêtes HTTP au Gateway pour interagir avec les services backend. Elle est responsable de fournir une expérience utilisateur fluide en récupérant et en affichant dynamiquement les données.
+
 ![image](https://github.com/user-attachments/assets/c6e1d305-91d7-4758-a421-1152fc709d46)
 
 
@@ -45,8 +49,8 @@ Ce projet propose un logiciel basé sur l'IA capable de générer automatiquemen
 
 1. *Cloner le Projet :*
 ```bash
-   git clone https://github.com/Oussama-benrkia/AI-Software-for-Test-Automation-System.git
-   cd AI-Software-for-Test-Automation-System
+   git clone https://github.com/Oussama-benrkia/Testunit.git
+   cd Testunit
 ```
 
 2. *Installer les Dépendances Backend :*
@@ -58,8 +62,7 @@ Ce projet propose un logiciel basé sur l'IA capable de générer automatiquemen
 
 3. *Exécuter le Backend :*
    - Démarrez vos serveurs Apache et MySQL via XAMPP.
-   - Lancez l'application Spring Boot. La base de données et les entités seront créées automatiquement.
-   - Vérifiez que le backend fonctionne en visitant [http://localhost:8080](http://localhost:8080) dans votre navigateur.
+   - Lancez l'application Spring Boot (Eureka -> Projet -> Gemini -> Gateway). La base de données et les entités seront créées automatiquement.
 
 ### Configuration du Frontend :
 
